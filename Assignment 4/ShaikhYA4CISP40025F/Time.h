@@ -1,0 +1,46 @@
+/*
+  Name: Yunus Shaikh
+  Course: CISP 400 	6 Object Oriented Programming in C++
+  Assignment: A4 	6 Date/Time composition and tick
+  File: Time.h
+  Purpose: Declares the Time class which stores hour, minute, second and
+           provides validated setters/getters and print routines.
+*/
+
+//  Time.h
+// Time class containing a constructor with default arguments.
+// Member functions defined in Time.cpp.
+
+// prevent multiple inclusions of header 
+#ifndef TIME_H
+#define TIME_H
+
+#include <iostream> // required for output in print functions
+
+// Time class definition
+class Time 
+{
+public:
+   explicit Time( int = 0, int = 0, int = 0 ); // default constructor
+   ~Time(); // destructor
+
+   // set functions
+   void setTime( int, int, int ); // set hour, minute, second
+   void setHour( int ); // set hour (after validation)
+   void setMinute( int ); // set minute (after validation)
+   void setSecond( int ); // set second (after validation)
+
+   // get functions
+   unsigned int getHour() const; // return hour
+   unsigned int getMinute() const; // return minute
+   unsigned int getSecond() const; // return second
+
+   void printUniversal() const; // output time in universal-time format
+   void printStandard() const; // output time in standard-time format
+private:
+   unsigned int hour; // 0 - 23 (24-hour clock format)
+   unsigned int minute; // 0 - 59
+   unsigned int second; // 0 - 59
+}; // end class Time
+
+#endif
