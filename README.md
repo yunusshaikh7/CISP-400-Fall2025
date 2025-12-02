@@ -1,6 +1,6 @@
 # CISP 400 (Fall 2025) Assignments
 
-This repository collects Yunus Shaikh's solutions for the Sacramento City College **CISP 400: Object Oriented Programming in C++** course. Each folder contains a self-contained assignment demonstrating a specific language concept or data structure.
+This repository collects Yunus Shaikh's solutions for the Cosumnes River College **CISP 400: Object Oriented Programming in C++** course. Each folder contains a self-contained assignment demonstrating a specific language concept or data structure.
 
 ## Repository layout
 - **Assignment 1** – Introductory GradeBook exercises and Employee class demos. Source files live under `Assignment 1/ShaikhYA1CISP40025F/` and `Assignment 1/ShaikhYAD1CISP40025F/`.
